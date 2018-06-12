@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        *{margin: 0;padding: 0;}
+        div{width: 1000px;height: 650px;overflow: hidden;margin: 0 auto;}
+        ul{clear: both;content: "";display: table;width: 5000px;transition: 1s;}
+        li{list-style: none;float: left;}
+        li img{width: 1000px;height: 600px;}
+        .btn {width: 1000px;margin: 0 auto;overflow: inherit;height: 50px;color: #fff;}
+        .btn::after {display: block;clear: both;content: "";}
+        .btn .next {width: 50px; height: 50px; background-color: #000; float: right;}
+        .btn .prev {width: 50px; height: 50px; background-color: #000; float: left;}
+        .list {position: relative;}
+    </style>
+    
+</head>
+<body>
+   <div>
+       <ul class="list" style="left:-1000px;">
+            <li><img src="images/psb8.jpg" alt=""></li>
+            <li><img src="images/psb1.jpg" alt=""></li>
+            <li><img src="images/psb3.jpg" alt=""></li>
+            <li><img src="images/psb8.jpg" alt=""></li>
+            <li><img src="images/psb1.jpg" alt=""></li>
+        </ul>
+        <div class="btn">
+            <div class="next">
+                next
+            </div>
+            <div class="prev">
+                prev
+            </div>
+        </div>
+   </div>
+    
+</body>
+<script>
+    var next = document.querySelector(".next"),
+        prev = document.querySelector(".prev"),
+        list = document.querySelector(".list");
+    
+    var i=0;
+    
+    
+    function animate(offset){
+        list.style.left = parseInt(list.style.left)+offset+"px";
+        list.style.transition = "1s";
+        
+        if(parseInt(list.style.left)>-1000){//等于0+执行
+            setTimeout(function(){
+                list.style.transition = "0s";
+                list.style.left = -3000+"px";
+            },1000)
+        };
+        
+        if(parseInt(list.style.left)<-3000){//等于-4000+执行
+            setTimeout(function(){
+                list.style.transition = "0s";
+                list.style.left = -1000+"px";
+            },1000)
+        }
+    }
+    
+    
+    
+    prev.onclick = function(){
+//        console.log(parseInt(list.style.left));
+        animate(-1000);
+        console.log(parseInt(list.style.left));
+    }
+    next.onclick = function(){
+        animate(1000);
+        console.log(parseInt(list.style.left));
+    }
+    
+//    setInterval(function(){
+//        list.style.left = -1000+"px";
+//    },1000)
+</script>
+</html>
