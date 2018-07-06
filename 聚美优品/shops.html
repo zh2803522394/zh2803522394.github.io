@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聚美优品</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="swiper/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shops.css">
+</head>
+<body>
+    
+<!----------------header----------------->
+<header>
+    <div class="row text-center">
+        <div class="col-xs-3"><a href="#"><i class="glyphicon glyphicon-chevron-left"></i></a></div>
+        <div class="col-xs-6">购物车</div>
+        <div class="col-xs-3"><a href="#"><i class="fa fa-home"></i></a></div>
+    </div>
+</header>
+
+
+<!----------------底部导航----------------->
+    <nav>
+        <ul class="list-inline row text-center">
+            <li class="col-xs-3"><a href="index.html"><span><i class="fa fa-home"></i></span><p>首页</p></a></li>
+            <li class="col-xs-3"><a href="group.html"><span><i class="fa fa-list"></i></span><p>拼团</p></a></li>
+            <li class="col-xs-3"><a href="shops.html"   class="active"><span><i class="fa fa-shopping-cart"></i></span><p>购物车</p></a></li>
+            <li class="col-xs-3"><a href="member.html"><span><i class="fa fa-user-o"></i></span><p>我的</p></a></li>
+        </ul>
+    </nav>
+
+<!----------------banner----------------->
+    <div class="banner text-center">
+        <img src="images/shops.png" alt="">
+        <p>您的购物车中没有商品，请先去挑选心爱的商品吧！</p>
+        <a href="#">去逛逛</a>
+    </div>
+    
+<!----------------产品推荐----------------->
+    <div class="shop">
+        <h3>-----为您推荐-----</h3>
+        <ul class="row">
+            <li v-for="aa in arrs" class="col-xs-6">
+                <a href="#">
+                    <img :src="aa.img" alt="">
+                    <p class="shop-p1">{{aa.txt}}</p>
+                    <span class="money1">{{aa.money1}}</span>
+                    <span class="money2">{{aa.money2}}</span>
+                    <p class="shop-p2">{{aa.txt2}}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="swiper/swiper-4.2.6.min.js"></script>
+<script src="vue/vue.js"></script>
+<script src="js/recommend.js"></script>
+<script src="js/script.js"></script>
+<script src="js/shops.js"></script>
+</html>

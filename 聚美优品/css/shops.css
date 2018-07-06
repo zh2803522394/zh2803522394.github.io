@@ -1,0 +1,9 @@
+header{width: 100%;padding: 10px 0px;border-bottom: 1px solid #999;background-color: white;z-index: 1;}
+header .row{margin: 0;font-size: 14px;}
+header .col-xs-6{color: black;}
+header a{color: #999;}
+
+.banner{width: 100%;padding: 50% 0;padding-bottom: 60%;}
+.banner img{width: 30%;}
+.banner p{font-size: 12px;margin-top: 5%;margin-bottom: 5%;}
+.banner a{padding: 1.5% 8%; border-radius: 50px; background-color: #fe4070;color: white;}

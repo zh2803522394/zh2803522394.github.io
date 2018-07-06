@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聚美优品</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="swiper/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+<!----------------头部弹窗----------------->
+<ul class="news list-inline row">
+    <li class="col-xs-2"><img src="images/jumeiapp.png" alt=""></li>
+    <li class="col-xs-6"><p>聚美优品，我为自己代言</p></li>
+    <li class="col-xs-3"><a href="#">前往聚美</a></li>
+    <li class="col-xs-1 clos"><a href="#">x</a></li>
+</ul>
+
+
+<!----------------底部导航----------------->
+    <nav>
+        <ul class="list-inline row text-center">
+            <li class="col-xs-3"><a href="index.html"><span><i class="fa fa-home"></i></span><p>首页</p></a></li>
+            <li class="col-xs-3"><a href="group.html"  class="active"><span><i class="fa fa-list"></i></span><p>拼团</p></a></li>
+            <li class="col-xs-3"><a href="shops.html"><span><i class="fa fa-shopping-cart"></i></span><p>购物车</p></a></li>
+            <li class="col-xs-3"><a href="member.html"><span><i class="fa fa-user-o"></i></span><p>我的</p></a></li>
+        </ul>
+    </nav>
+
+    
+    <!----------------homenav----------------->
+       <div class="home">
+           <div class="home-nav">
+            <ul class="list-inline navs">
+                <li class="active2"><a class="active1">推荐</a></li>
+                <li><a href="#">母婴健康</a></li>
+                <li><a href="#">家居</a></li>
+                <li><a href="#">食品保健</a></li>
+                <li><a href="#">礼品箱包</a></li>
+                <li><a href="#">数码家电</a></li>
+                <li><a href="#">饰品配饰</a></li>
+                <li><a href="#">内衣</a></li>
+                <li><a href="#">女装</a></li>
+                <li><a href="#">美妆</a></li>
+                <li><a href="#">鞋类</a></li>
+                <li><a href="#">下期预告</a></li>
+            </ul>
+        </div>
+       </div>
+    
+    <!----------------banner----------------->
+        <div class="banner row">
+          <div class="as1">
+              <a v-for="bb in shops1" href="#" class="col-xs-12"><div class="banner-img"><img :src="bb.img" alt=""><button class="buy-num">{{bb.btn1}}</button></div><div class="banner-txt"><span>[2人团]</span>{{bb.txt}}</div><div class="banner-money"><span class="rmb1">{{bb.rmb1}}</span><span class="rmb2">{{bb.rmb2}}</span><p>{{bb.p}}</p></div><button>去开团</button></a>
+          </div>
+           
+           <div class="as1">
+                <a v-for="bb in shops2" href="#" class="col-xs-12"><div class="banner-img"><img :src="bb.img" alt=""><button class="buy-num">{{bb.btn1}}</button></div><div class="banner-txt"><span>[2人团]</span>{{bb.txt}}</div><div class="banner-money"><span class="rmb1">{{bb.rmb1}}</span><span class="rmb2">{{bb.rmb2}}</span><p>{{bb.p}}</p></div><button>去开团</button></a>
+           </div>
+           
+           <div class="as1">
+                <a v-for="bb in shops2" href="#" class="col-xs-12"><div class="banner-img"><img :src="bb.img" alt=""><button class="buy-num">{{bb.btn1}}</button></div><div class="banner-txt"><span>[2人团]</span>{{bb.txt}}</div><div class="banner-money"><span class="rmb1">{{bb.rmb1}}</span><span class="rmb2">{{bb.rmb2}}</span><p>{{bb.p}}</p></div><button>去开团</button></a>
+           </div>
+           
+           <div class="as1">
+                <a v-for="bb in shops2" href="#" class="col-xs-12"><div class="banner-img"><img :src="bb.img" alt=""><button class="buy-num">{{bb.btn1}}</button></div><div class="banner-txt"><span>[2人团]</span>{{bb.txt}}</div><div class="banner-money"><span class="rmb1">{{bb.rmb1}}</span><span class="rmb2">{{bb.rmb2}}</span><p>{{bb.p}}</p></div><button>去开团</button></a>
+           </div>
+           
+           <div class="as1">
+                <a v-for="bb in shops2" href="#" class="col-xs-12"><div class="banner-img"><img :src="bb.img" alt=""><button class="buy-num">{{bb.btn1}}</button></div><div class="banner-txt"><span>[2人团]</span>{{bb.txt}}</div><div class="banner-money"><span class="rmb1">{{bb.rmb1}}</span><span class="rmb2">{{bb.rmb2}}</span><p>{{bb.p}}</p></div><button>去开团</button></a>
+           </div>
+           
+           <div class="as1">
+                <a v-for="bb in shops2" href="#" class="col-xs-12"><div class="banner-img"><img :src="bb.img" alt=""><button class="buy-num">{{bb.btn1}}</button></div><div class="banner-txt"><span>[2人团]</span>{{bb.txt}}</div><div class="banner-money"><span class="rmb1">{{bb.rmb1}}</span><span class="rmb2">{{bb.rmb2}}</span><p>{{bb.p}}</p></div><button>去开团</button></a>
+           </div>
+           
+           <div class="as1">
+                <a v-for="bb in shops2" href="#" class="col-xs-12"><div class="banner-img"><img :src="bb.img" alt=""><button class="buy-num">{{bb.btn1}}</button></div><div class="banner-txt"><span>[2人团]</span>{{bb.txt}}</div><div class="banner-money"><span class="rmb1">{{bb.rmb1}}</span><span class="rmb2">{{bb.rmb2}}</span><p>{{bb.p}}</p></div><button>去开团</button></a>
+           </div>
+           
+           <div class="as1">
+                <a v-for="bb in shops2" href="#" class="col-xs-12"><div class="banner-img"><img :src="bb.img" alt=""><button class="buy-num">{{bb.btn1}}</button></div><div class="banner-txt"><span>[2人团]</span>{{bb.txt}}</div><div class="banner-money"><span class="rmb1">{{bb.rmb1}}</span><span class="rmb2">{{bb.rmb2}}</span><p>{{bb.p}}</p></div><button>去开团</button></a>
+           </div>
+           
+           <div class="as1">
+                <a v-for="bb in shops2" href="#" class="col-xs-12"><div class="banner-img"><img :src="bb.img" alt=""><button class="buy-num">{{bb.btn1}}</button></div><div class="banner-txt"><span>[2人团]</span>{{bb.txt}}</div><div class="banner-money"><span class="rmb1">{{bb.rmb1}}</span><span class="rmb2">{{bb.rmb2}}</span><p>{{bb.p}}</p></div><button>去开团</button></a>
+           </div>
+           
+           <div class="as1">
+                <a v-for="bb in shops2" href="#" class="col-xs-12"><div class="banner-img"><img :src="bb.img" alt=""><button class="buy-num">{{bb.btn1}}</button></div><div class="banner-txt"><span>[2人团]</span>{{bb.txt}}</div><div class="banner-money"><span class="rmb1">{{bb.rmb1}}</span><span class="rmb2">{{bb.rmb2}}</span><p>{{bb.p}}</p></div><button>去开团</button></a>
+           </div>
+           
+           <div class="as1">
+                <a v-for="bb in shops2" href="#" class="col-xs-12"><div class="banner-img"><img :src="bb.img" alt=""><button class="buy-num">{{bb.btn1}}</button></div><div class="banner-txt"><span>[2人团]</span>{{bb.txt}}</div><div class="banner-money"><span class="rmb1">{{bb.rmb1}}</span><span class="rmb2">{{bb.rmb2}}</span><p>{{bb.p}}</p></div><button>去开团</button></a>
+           </div>
+           
+           <div class="as1">
+                <a v-for="bb in shops2" href="#" class="col-xs-12"><div class="banner-img"><img :src="bb.img" alt=""><button class="buy-num">{{bb.btn1}}</button></div><div class="banner-txt"><span>[2人团]</span>{{bb.txt}}</div><div class="banner-money"><span class="rmb1">{{bb.rmb1}}</span><span class="rmb2">{{bb.rmb2}}</span><p>{{bb.p}}</p></div><button>去开团</button></a>
+           </div>
+        </div>
+        
+
+<!----------------产品推荐----------------->
+    <div class="shop">
+        <h3>-----为您推荐-----</h3>
+        <ul class="row">
+            <li v-for="aa in arrs" class="col-xs-6">
+                <a href="#">
+                    <img :src="aa.img" alt="">
+                    <p class="shop-p1">{{aa.txt}}</p>
+                    <span class="money1">{{aa.money1}}</span>
+                    <span class="money2">{{aa.money2}}</span>
+                    <p class="shop-p2">{{aa.txt2}}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+       
+    <img src="top.gif" alt="" class="top">
+</body>
+<script src="swiper/swiper-4.2.6.min.js"></script>
+<script src="vue/vue.js"></script>
+<script src="js/recommend.js"></script>
+<script src="js/script.js"></script>
+<script src="js/group.js"></script>
+</html>

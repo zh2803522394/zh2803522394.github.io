@@ -1,0 +1,24 @@
+.home{width: 100%;height: auto;z-index: 1;}
+.home-nav{overflow: scroll;border-bottom: 1px solid #999;background-color: white;}
+.home-nav::-webkit-scrollbar {display: none;}/*滚动条消失*/
+.home-nav ul{width:930px;margin:0px;}
+.home-nav ul li{font-size: 14px;padding: 10px 15px;text-align: center;}
+.home-nav ul li a{padding-bottom: 10px;color: #666;}
+.home-nav .active1{color: #fe4070;border-bottom: 2px solid #fe4070;}
+
+
+
+.banner{margin: 0;background-color: #f5f5f5;}
+.banner a{text-decoration: none;background-color: #fff;margin-bottom: 8px;}
+.banner .as1{display: none;}
+.banner .col-xs-12{width: 100%;position: relative;padding: 0;}
+.banner .col-xs-12 .banner-img{width: 100%;text-align: center;}
+.banner .col-xs-12 .banner-img img{width: 50%;text-align: center;margin: 0 auto;}
+.banner .col-xs-12 .banner-txt{color: #000;padding:0px 15px;}
+.banner .col-xs-12 .banner-txt span{color: red;}
+.banner .col-xs-12 .banner-money{padding:0px 15px;}
+.banner .col-xs-12 .banner-money .rmb1{color:red;font-size: 20px;}
+.banner .col-xs-12 .banner-money .rmb2{color: #999;text-decoration: line-through; font-size: 12px;}
+.banner .col-xs-12 .banner-money p{color: #999;font-size: 12px;}
+.banner .col-xs-12 .buy-num{color: black;font-size: 12px;background-color: #f5f5f5;padding: 2px 10px;position:absolute;left: -2%;bottom: 50%; border: 1px #eee solid;}
+.banner .col-xs-12 button{border: none;padding: 5px 20px; border-radius: 50px; background-color: #fe4070;color: white;position: absolute;right: 5%;bottom: 5%;}

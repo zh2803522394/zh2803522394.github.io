@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聚美优品</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="swiper/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/member.css">
+</head>
+<body>
+    
+<!----------------header----------------->
+<header>
+    <div class="row text-center">
+        <div class="col-xs-3"><a href="#"><i class="glyphicon glyphicon-chevron-left"></i></a></div>
+        <div class="col-xs-6">我的聚美</div>
+        <div class="col-xs-3"><a href="#"><i class="fa fa-home"></i></a></div>
+    </div>
+    
+    <div class="text-center bottom">
+        <img src="images/me.png" alt="">
+        <p><a href="register.html">注册</a> | <a href="sign%20in.html">登录</a></p>
+    </div>
+</header>
+
+
+<!----------------底部导航----------------->
+    <nav>
+        <ul class="list-inline row text-center">
+            <li class="col-xs-3"><a href="index.html"><span><i class="fa fa-home"></i></span><p>首页</p></a></li>
+            <li class="col-xs-3"><a href="group.html"><span><i class="fa fa-list"></i></span><p>拼团</p></a></li>
+            <li class="col-xs-3"><a href="shops.html"><span><i class="fa fa-shopping-cart"></i></span><p>购物车</p></a></li>
+            <li class="col-xs-3"><a href="member.html" class="active"><span><i class="fa fa-user-o"></i></span><p>我的</p></a></li>
+        </ul>
+    </nav>
+
+<!----------------order----------------->
+<div class="order">
+    <div class="order-top">
+        <div class="order-title"><i class="myorder"></i>我的订单<a href="#">查看我的全部订单<i class="glyphicon glyphicon-menu-right"></i></a></div>
+        <hr>
+        <div class="order-content row text-center">
+            <div class="col-xs-3"><a href="#"><i class="is1"></i><span>待付款</span></a></div>
+            <div class="col-xs-3"><a href="#"><i class="is2"></i><span>待收货</span></a></div>
+            <div class="col-xs-3"><a href="#"><i class="is3"></i><span>待评价</span></a></div>
+            <div class="col-xs-3"><a href="#"><i class="is4"></i><span>退货/退款</span></a></div>
+        </div>
+    </div>
+    
+    
+    <div class="order-top">
+        <div class="order-title"><i class="myorder"></i>我的订单<a href="#">查看我的全部订单<i class="glyphicon glyphicon-menu-right"></i></a></div>
+        <hr>
+        <div class="order-content row text-center">
+            <div class="col-xs-3"><a href="#"><sapn>现金券</sapn></a></div>
+            <div class="col-xs-3"><a href="#"><sapn>红包</sapn></a></div>
+            <div class="col-xs-3"><a href="#"><sapn>聚美余额</sapn></a></div>
+            <div class="col-xs-3"><a href="#"><sapn>礼品卡</sapn></a></div>
+        </div>
+    </div>
+    
+    <div class="as">
+        <a href="#"><img src="images/rmaservice.png" alt=""><span>售后服务</span><i class="glyphicon glyphicon-menu-right"></i></a>
+        <a href="#"><img src="images/feedback.png" alt=""><span>意见反馈</span><i class="glyphicon glyphicon-menu-right"></i></a>
+        <a href="#"><img src="images/address.png" alt=""><span>收货地址</span><i class="glyphicon glyphicon-menu-right"></i></a>
+        <a href="#"><img src="images/logout.png" alt=""><span>退出登录</span><i class="glyphicon glyphicon-menu-right"></i></a>
+        <a href="#"><img src="images/tel.png" alt=""><span>400-123-8888</span><i class="glyphicon glyphicon-menu-right"></i></a>
+    </div>
+    <p>客服热线400-123-8888 (8:00-22:00) <br>拨打前请记录您的UID  0    </p>
+</div>
+
+
+<!----------------main----------------->
+ 
+<!----------------产品推荐----------------->
+    <div class="shop">
+        <h3>-----为您推荐-----</h3>
+        <ul class="row">
+            <li v-for="aa in arrs" class="col-xs-6">
+                <a href="#">
+                    <img :src="aa.img" alt="">
+                    <p class="shop-p1">{{aa.txt}}</p>
+                    <span class="money1">{{aa.money1}}</span>
+                    <span class="money2">{{aa.money2}}</span>
+                    <p class="shop-p2">{{aa.txt2}}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="swiper/swiper-4.2.6.min.js"></script>
+<script src="vue/vue.js"></script>
+<script src="js/recommend.js"></script>
+<!--<script src="js/script.js"></script>-->
+<!--<script src="js/shops.js"></script>-->
+</html>
